@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <body class="container">
-<header>
+    <header class="container">
     <nav>
         <div class="lang-pages"><a href="#">ENG</a></div>
         <ul>
@@ -19,9 +19,20 @@
     </nav>
     <img class="img-header" src="images/logo.png" alt="">
 </header>
-<main>
-    <section class="one-section all-section">
-        <div class="title-div"> <h2>core components</h2><span class="miniwords">Chapter 1 </span></div>
+<main class="sticky">
+        <aside class="left-panel">
+            <nav>
+                <ul class="left-panel__ul">
+                    <li><a href="#num1">Introduction</a></li>
+                    <li><a href="#num2">core components</a> </li>
+                    <li><a href="#">react fundamentals</a> </li>
+                    <li><a href="#">handling text input</a> </li>
+                </ul>
+            </nav>
+        </aside>
+    <div>
+    <section class="one-section all-section ">
+        <div class="title-div"> <h2 id="num1">core components</h2><span class="miniwords">Chapter 1 </span></div>
         <p class="section__p">
             Welcome to the very start of your React Native journey! If you're looking for environment setup
             instructions,
@@ -30,7 +41,7 @@
             React, and more!
         </p>
     </section>
-    <section class="two-section all-section">
+    <section  id="num2" class="two-section all-section ">
         <div class="title-div"><h2>core component</h2><span class="miniwords">Chapter 2</span></div>
         <p class="section__p">
             React Native is an open source framework for building Android and iOS applications using React and the app
@@ -40,7 +51,7 @@
             work in React Native.
         </p>
     </section>
-    <section class="three-section all-section">
+    <section class="three-section all-section ">
         <div class="title-div"><h2>react fundamentals</h2><span class="miniwords">Chapter 3</span></div>
         <p class="section__p">
             React Native runs on <u>React</u> , a popular open source library for building user interfaces with JavaScript.
@@ -69,7 +80,7 @@
             time or that comes from user interaction. State gives your components memory!
         </p>
     </section>
-    <section class="three-section all-section">
+    <section class="three-section all-section ">
         <div class="title-div"><h2>handling text input</h2><span class="miniwords">Chapter 4</span></div>
 
         <p>
@@ -83,7 +94,7 @@
             would be translated as "🍕 🍕".
         </p>
     </section>
-
+    </div>
 </main>
 </body>
 </html>

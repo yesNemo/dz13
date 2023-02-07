@@ -48,8 +48,39 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 40px;
-    margin-top: 10px;
+    height: 80px;
+    position: fixed;
+    background: white;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.sticky{
+    display: grid;
+    grid-template-columns: 385px 785px;
+    grid-gap: 30px;
+}
+.left-panel{
+    /*box-sizing: border-box;*/
+    position: sticky;
+    top: 100px;
+    /*position: -webkit-sticky;*/
+    /*position: sticky;*/
+    width: 385px;
+
+    font-family: 'Francois One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    /* identical to box height, or 133% */
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+}
+aside li{
+    padding-top: 80px;
 }
 header nav{
     display: flex;
@@ -70,7 +101,19 @@ header ul{
 .header_li:not(:last-child):after{
     content: '/';
     padding:0 10px;
-
+}
+.left-panel__ul a:after{
+    content:'';
+    height: 2px;
+    display: block;
+    width: 100%;
+    background-color: black;
+}
+main{
+    /*margin-top: 80px;*/
+}
+.all-section{
+    margin-top: 70px;
 }
 /*header and*/
 .spanbgcolors{
@@ -89,6 +132,13 @@ h2{
     letter-spacing: 0.04em;
     text-transform: uppercase;
     padding-bottom: 40px;
+}
+h2:before{
+    content: '';
+    height: 8px;
+    display: block;
+    width: 100px;
+    background-color: black;
 }
 .miniwords{
     font-family: 'Farro';
